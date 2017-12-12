@@ -986,7 +986,7 @@ span.zoom_tool {
 		height: 71px;
 	}
 	#workarea, #sidepanels {
-		top: 70px;
+		top: 1px;
 	}
 	#rulers #ruler_corner,
 	#rulers #ruler_x, #tools_left {
