@@ -15,7 +15,9 @@ $(function () {'use strict';
         // Hide main button, as we will be controlling new, load, save, etc. from the host document
         doc = frame.contentDocument || frame.contentWindow.document;
         mainButton = doc.getElementById('main_button');
-        mainButton.style.display = 'none';
+        if (mainButton) {
+            mainButton.style.display = 'none';
+        }
     };
 
     function handleSvgData(data, error) {

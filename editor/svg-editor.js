@@ -87,17 +87,18 @@ TODOS
 				allowedOrigins: []
 			},
 			defaultExtensions = [
-				'ext-overview_window.js',
-				'ext-markers.js',
-				'ext-connector.js',
-				'ext-eyedropper.js',
-				'ext-shapes.js',
-				'ext-imagelib.js',
-				'ext-grid.js',
-				'ext-polygon.js',
-				'ext-star.js',
-				'ext-panning.js',
-				'ext-storage.js'
+				// 'ext-overview_window.js',
+				// 'ext-markers.js',
+				// 'ext-connector.js',
+				// 'ext-eyedropper.js',
+				// 'ext-shapes.js',
+				// 'ext-imagelib.js',
+				// 'ext-grid.js',
+				// 'ext-polygon.js',
+				// 'ext-star.js',
+				// 'ext-panning.js',
+				'ext-storage.js',
+				// 'ext-helloworld.js'
 			],
 			defaultConfig = {
 				// Todo: svgcanvas.js also sets and checks: show_outside_canvas, selectNew; add here?
@@ -140,7 +141,7 @@ TODOS
 				gridColor: '#000',
 				baseUnit: 'px',
 				snappingStep: 10,
-				showRulers: true,
+				showRulers: false,
 				// URL BEHAVIOR CONFIGURATION
 				preventAllURLConfig: false,
 				preventURLContentLoading: false,
@@ -4500,8 +4501,8 @@ TODOS
 					{sel: '#tool_export', fn: clickExport, evt: 'mouseup'},
 					{sel: '#tool_open', fn: clickOpen, evt: 'mouseup', key: ['O', true]},
 					{sel: '#tool_import', fn: clickImport, evt: 'mouseup'},
-					{sel: '#tool_source', fn: showSourceEditor, evt: 'click', key: ['U', true]},
-					{sel: '#tool_wireframe', fn: clickWireframe, evt: 'click', key: ['F', true]},
+					// {sel: '#tool_source', fn: showSourceEditor, evt: 'click', key: ['U', true]},
+					// {sel: '#tool_wireframe', fn: clickWireframe, evt: 'click', key: ['F', true]},
 					{sel: '#tool_source_cancel,.overlay,#tool_docprops_cancel,#tool_prefs_cancel', fn: cancelOverlays, evt: 'click', key: ['esc', false, false], hidekey: true},
 					{sel: '#tool_source_save', fn: saveSourceEditor, evt: 'click'},
 					{sel: '#tool_docprops_save', fn: saveDocProperties, evt: 'click'},
